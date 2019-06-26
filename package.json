@@ -1,0 +1,40 @@
+{
+  "name": "react-4",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://boomcamp.github.io/react-4/",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "concurrently": "^4.1.0",
+    "json-server": "^0.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-text-truncate": "^0.14.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "api": "json-server --watch db.json --port 9090 --delay 500",
+    "start:all": "concurrently  \"npm:start\" \"npm:api\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
